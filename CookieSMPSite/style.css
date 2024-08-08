@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'minecraft';
+  src: url('minecraftSeven/MinecraftSeven.ttf')
+}
+
+body {
+	position: relative;
+	font-family: 'minecraft', sans-serif;
+	background-image: url(screenshots/panorama.png);
+	background-repeat: no-repeat;
+	z-index: 0;
+    background-size: cover;
+    height:100vh;
+    background-position:100%;
+    overflow: hidden;
+}
+.title{
+	width: 500px;
+	display: block;
+	margin: auto;
+	padding-top: 100px;
+	padding-bottom: 150px;
+}
+
+a {
+	text-decoration:none;
+	font-family: minecraft-bold, sans-serif;
+	color: #ffff55;
+	text-shadow: 1px 1px 00 #000;
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.box {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 50%;
+	padding: 5vh;
+	border-image-slice: 100 100 fill;
+	border-image-width: 64px;
+	margin-top: 10px;
+	-ms-interpolation-mode: nearest-neighbor;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+
+.center-screen {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	text-align: center;
+}
+
+img{
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.mc-button {
+	font-family: 'minecraft';
+	display: inline-block;
+	border: 2px solid rgba(0,0,0,1);
+	text-align: center;
+	line-height: 35px;
+	font-size: 1.25rem;
+	width: 400px;
+	height: 40px;
+	background-size: cover;
+	image-rendering: pixelated;
+	text-decoration: none;
+	color: rgb(247, 247, 247);
+	text-shadow: 2px 2px 0 rgba(0,0,0,.8);
+	background-image: url(menuButton.png);
+	max-width: 100%;
+	max-height:auto;
+	margin-bottom:10px;
+	letter-spacing: .025em;
+	box-shadow: inset 3px 3px 0 rgba(255,255,255,.5),
+	inset -3px -3px 0 rgba(0,0,0,.5);
+	cursor: pointer;
+}
+
+.mc-button:hover {
+	background-image: url(menuButtonBlue.png);
+	color:yellow;
+}
+
+.mc-button:active{
+	box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
+}
+
+@media screen and (max-width: 1280px){
